@@ -1,8 +1,6 @@
 <% provide(:title, "Home") %>
-<head>
-    <title><%= yield(:title) %> | Post App</title>
-</head>
-<body>
-    <h1>Post App</h1>
-    <p>This is the home page for the Post application.</p>
-</body>
+<div class="center jumbotron">
+  <h1>Welcome to the Post App</h1>
+  <h2>This is the home page for the Post application.</h2>
+  <%= link_to "Sign up", user_signup_path, class: "btn btn-lg btn-primary" %>
+</div>
